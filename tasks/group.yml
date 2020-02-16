@@ -1,0 +1,6 @@
+---
+- name: ensure plex group
+  group:
+    name: "{{ plex_group }}"
+    state: "{{ plex_group_state }}"
+  become: true

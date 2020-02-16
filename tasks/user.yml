@@ -1,0 +1,10 @@
+---
+- name: ensure plex user
+  user:
+    name: "{{ plex_user }}"
+    state: "{{ plex_user_state }}"
+    group: "{{ plex_group }}"
+    groups: "{{ plex_user_extra_groups | join(', ') }}"
+    home: "{{ plex_home }}"
+    shell: "{{ plex_shell }}"
+  become: true

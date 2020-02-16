@@ -1,0 +1,10 @@
+---
+- name: ensure plex
+  block:
+    - import_tasks: group.yml
+    - import_tasks: user.yml
+    - import_tasks: package.yml
+    - import_tasks: dri.yml
+    - import_tasks: systemd.yml
+  tags:
+    - plex

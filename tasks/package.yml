@@ -1,0 +1,15 @@
+---
+- name: ensure plex key, package and repository
+  include_role:
+    name: "damex.package"
+  vars:
+    package_repository_keys:
+      - id: "{{ plex_repository_key_id }}"
+        url: "{{ plex_repository_key_url }}"
+        state: "{{ plex_repository_key_state }}"
+    package_repositories:
+      - name: "{{ plex_repository_name }}"
+        repository: "{{ plex_repository }}"
+    package_packages:
+      - name: "{{ plex_package_name }}"
+        state: "{{ plex_package_state }}"

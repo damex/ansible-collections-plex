@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  role_name: plex
+  author: Roman Kuzmitskii
+  description: plex role
+  license: GPLv2
+  min_ansible_version: 2.8
+  galaxy_tags:
+    - plex
+  platforms:
+    - name: "Debian"
+      versions:
+        - "buster"
+dependencies:
+  - role: "damex.package"

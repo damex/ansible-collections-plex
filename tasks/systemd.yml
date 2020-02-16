@@ -1,0 +1,17 @@
+---
+- name: ensure systemd
+  block:
+    - name: ensure plex service is enabled
+      systemd:
+        name: "{{ plex_service_name }}"
+        enabled: true
+    - name: ensure plex service is started
+      systemd:
+        name: "{{ plex_service_name }}"
+        state: "started"
+    - name: ensure plex service is restarted
+      systemd:
+        name: "{{ plex_service_name }}"
+        state: "restarted"
+      when: plex_dri_ihd_drv_video_so.changed
+  become: true

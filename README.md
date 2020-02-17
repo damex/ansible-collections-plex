@@ -1,6 +1,6 @@
 # ansible plex role
 
-[![Build Status](https://travis-ci.org/damex/ansible-role-plex.svg?branch=master)](https://travis-ci.org/damex/ansible-role-plex)
+[![Build Status](https://travis-ci.com/damex/ansible-role-plex.svg?branch=master)](https://travis-ci.com/damex/ansible-role-plex)
 
 The plex role is designed to be used with Debian distributive.
 

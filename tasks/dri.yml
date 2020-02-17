@@ -8,6 +8,6 @@
   file:
     path: "{{ plex_dri_ihd_so_file }}"
     state: "absent"
-  when: plex_dri_i965_drv_video_so.stat.exists
+  when: plex_dri_i965_so.stat.exists
   become: true
   register: plex_dri_ihd_so

@@ -13,5 +13,5 @@
       systemd:
         name: "{{ plex_service_name }}"
         state: "restarted"
-      when: plex_dri_ihd_drv_video_so.changed
+      when: plex_dri_ihd_so.changed
   become: true

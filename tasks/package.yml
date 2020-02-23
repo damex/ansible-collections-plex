@@ -1,5 +1,5 @@
 ---
-- name: ensure plex key, package and repository
+- name: ensure plex key and repository
   include_role:
     name: "damex.package"
   vars:
@@ -10,6 +10,21 @@
     package_repositories:
       - name: "{{ plex_repository_name }}"
         repository: "{{ plex_repository }}"
+
+- name: ensure plex package
+  include_role:
+    name: "damex.package"
+  vars:
     package_packages:
       - name: "{{ plex_package_name }}"
         state: "{{ plex_package_state }}"
+  when: not plex_package_version
+
+- name: ensure plex package with version
+  include_role:
+    name: "damex.package"
+  vars:
+    package_packages:
+      - name: "{{ plex_package_name }}-{{ plex_package_version }}"
+        state: "{{ plex_package_state }}"
+  when: plex_package_version | length

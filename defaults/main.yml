@@ -1,5 +1,6 @@
 ---
 plex_package_name: "plexmediaserver"
+plex_package_version: ""
 plex_package_state: "present"
 plex_user: "plex"
 plex_home: "/var/lib/plexmediaserver"

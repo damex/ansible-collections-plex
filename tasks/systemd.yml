@@ -1,17 +1,7 @@
 ---
-- name: ensure systemd
-  block:
-    - name: ensure plex service is enabled
-      systemd:
-        name: "{{ plex_service_name }}"
-        enabled: true
-    - name: ensure plex service is started
-      systemd:
-        name: "{{ plex_service_name }}"
-        state: "started"
-    - name: ensure plex service is restarted
-      systemd:
-        name: "{{ plex_service_name }}"
-        state: "restarted"
-      when: plex_dri_ihd_so.changed
-  become: true
+- name: ensure systemd service
+  include_role:
+    name: "damex.systemd_service"
+  vars:
+    systemd_service_name: "{{ plex_service_name }}"
+    systemd_service_restart_on: "plex_dri_ihd_so.changed"

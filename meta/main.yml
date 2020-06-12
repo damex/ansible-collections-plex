@@ -4,7 +4,7 @@ galaxy_info:
   author: Roman Kuzmitskii
   description: plex role
   license: GPLv2
-  min_ansible_version: 2.8
+  min_ansible_version: 2.9
   galaxy_tags:
     - plex
   platforms:
@@ -13,3 +13,4 @@ galaxy_info:
         - "buster"
 dependencies:
   - role: "damex.package"
+  - role: "damex.systemd_service"

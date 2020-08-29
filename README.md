@@ -1,8 +1,8 @@
 # ansible plex role
 
-[![Build Status](https://travis-ci.com/damex/ansible-role-plex.svg?branch=master)](https://travis-ci.com/damex/ansible-role-plex)
+[![linting](https://github.com/damex/ansible-role-plex/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-plex/actions)
 
-The plex role is designed to be used with Debian distributive.
+The plex role is designed to be used with `Debian Buster` distributive.
 
 `Ansible Galaxy` users can add plex role using the following command:
 

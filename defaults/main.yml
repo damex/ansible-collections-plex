@@ -11,9 +11,9 @@ plex_group_state: "present"
 plex_user_extra_groups:
   - render
   - video
-plex_dri_dir: "/usr/lib/plexmediaserver/lib/dri"
-plex_dri_i965_so_file: "{{ plex_dri_dir }}/i965_drv_video.so"
-plex_dri_ihd_so_file: "{{ plex_dri_dir }}/iHD_drv_video.so"
+plex_dri_directory: "/usr/lib/plexmediaserver/lib/dri"
+plex_dri_i965_so_file: "{{ plex_dri_directory }}/i965_drv_video.so"
+plex_dri_ihd_so_file: "{{ plex_dri_directory }}/iHD_drv_video.so"
 plex_service_name: "plexmediaserver"
 plex_repository_key_id: "3ADCA79D"
 plex_repository_key_url: "https://downloads.plex.tv/plex-keys/PlexSign.key"

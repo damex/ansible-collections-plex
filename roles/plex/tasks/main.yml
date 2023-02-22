@@ -1,5 +1,7 @@
 ---
 - name: Ensure plex
+  tags:
+    - plex
   block:
     - name: Ensure plex group
       ansible.builtin.import_tasks: group.yml
@@ -11,5 +13,3 @@
       ansible.builtin.import_tasks: repository.yml
     - name: Ensure plex package
       ansible.builtin.import_tasks: package.yml
-  tags:
-    - plex

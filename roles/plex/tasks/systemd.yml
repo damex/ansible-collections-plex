@@ -1,7 +1,0 @@
----
-- name: ensure systemd service
-  include_role:
-    name: "damex.systemd_service"
-  vars:
-    systemd_service_name: "{{ plex_service_name }}"
-    systemd_service_restart_on: "{{ plex_dri_ihd_so.changed }}"

@@ -1,8 +1,8 @@
 ---
 - name: ensure plex
   block:
-    - import_tasks: group.yml
-    - import_tasks: user.yml
-    - import_tasks: package.yml
+    - ansible.builtin.import_tasks: group.yml
+    - ansible.builtin.import_tasks: user.yml
+    - ansible.builtin.import_tasks: package.yml
   tags:
     - plex

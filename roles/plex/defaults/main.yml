@@ -1,22 +1,22 @@
 ---
-plex_package_name: "plexmediaserver"
+plex_package_name: plexmediaserver
 plex_package_version: ""
-plex_package_state: "present"
-plex_user: "plex"
-plex_home: "/var/lib/plexmediaserver"
-plex_shell: "/usr/sbin/nologin"
-plex_user_state: "present"
-plex_group: "plex"
-plex_group_state: "present"
+plex_package_state: present
+plex_user: plex
+plex_home: /var/lib/plexmediaserver
+plex_shell: /usr/sbin/nologin
+plex_user_state: present
+plex_group: plex
+plex_group_state: present
 plex_user_extra_groups:
   - render
   - video
-plex_service_name: "plexmediaserver"
-plex_repository_key_id: "3ADCA79D"
-plex_repository_key_url: "https://downloads.plex.tv/plex-keys/PlexSign.key"
-plex_repository_key_state: "present"
-plex_repository_name: "plexmediaserver"
-plex_repository_url: "https://downloads.plex.tv/repo/deb"
+plex_service_name: plexmediaserver
+plex_repository_key_id: 3ADCA79D
+plex_repository_key_url: https://downloads.plex.tv/plex-keys/PlexSign.key
+plex_repository_key_state: present
+plex_repository_name: plexmediaserver
+plex_repository_url: https://downloads.plex.tv/repo/deb
 plex_repository_distribution: public
 plex_repository_components:
   - main

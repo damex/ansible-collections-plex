@@ -8,8 +8,7 @@ galaxy_info:
   galaxy_tags:
     - plex
   platforms:
-    - name: "Debian"
+    - name: Debian
       versions:
-        - "buster"
-dependencies:
-  - role: "damex.systemd_service"
+        - buster
+dependencies: []

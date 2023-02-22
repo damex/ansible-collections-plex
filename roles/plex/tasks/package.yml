@@ -1,7 +1,7 @@
 ---
 - name: ensure plex key
   include_role:
-    name: "damex.apt.apt_keys"
+    name: damex.apt.apt_keys
   vars:
     apt_keys:
       - id: "{{ plex_repository_key_id }}"
@@ -10,7 +10,7 @@
 
 - name: ensure plex repository
   include_role:
-    name: "damex.apt.apt_repositories"
+    name: damex.apt.apt_repositories
   vars:
     apt_repositories:
       - name: "{{ plex_repository_name }}"
@@ -20,7 +20,7 @@
 
 - name: ensure plex package
   include_role:
-    name: "damex.apt.apt_packages"
+    name: damex.apt.apt_packages
   vars:
     apt_packages:
       - name: "{{ plex_package_name }}"
@@ -29,7 +29,7 @@
 
 - name: ensure plex package with version
   include_role:
-    name: "damex.apt.apt_packages"
+    name: damex.apt.apt_packages
   vars:
     apt_packages:
       - name: "{{ plex_package_name }}-{{ plex_package_version }}"

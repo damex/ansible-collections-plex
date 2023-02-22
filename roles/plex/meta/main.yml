@@ -4,8 +4,6 @@ galaxy_info:
   description: plex role
   license: GPLv2
   min_ansible_version: 2.10.6
-  galaxy_tags:
-    - plex
   platforms:
     - name: Debian
       versions:

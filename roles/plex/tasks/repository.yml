@@ -1,0 +1,10 @@
+---
+- name: ensure plex repository
+  ansible.builtin.include_role:
+    name: damex.apt.apt_repositories
+  vars:
+    apt_repositories:
+      - name: "{{ plex_repository_name }}"
+        url: "{{ plex_repository_url }}"
+        distribution: "{{ plex_repository_distribution }}"
+        components: "{{ plex_repository_components }}"

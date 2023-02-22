@@ -1,23 +1,4 @@
 ---
-- name: ensure plex key
-  ansible.builtin.include_role:
-    name: damex.apt.apt_keys
-  vars:
-    apt_keys:
-      - id: "{{ plex_repository_key_id }}"
-        url: "{{ plex_repository_key_url }}"
-        state: "{{ plex_repository_key_state }}"
-
-- name: ensure plex repository
-  ansible.builtin.include_role:
-    name: damex.apt.apt_repositories
-  vars:
-    apt_repositories:
-      - name: "{{ plex_repository_name }}"
-        url: "{{ plex_repository_url }}"
-        distribution: "{{ plex_repository_distribution }}"
-        components: "{{ plex_repository_components }}"
-
 - name: ensure plex package
   ansible.builtin.include_role:
     name: damex.apt.apt_packages

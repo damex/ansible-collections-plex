@@ -5,6 +5,10 @@
       ansible.builtin.import_tasks: group.yml
     - name: ensure plex user
       ansible.builtin.import_tasks: user.yml
+    - name: ensure plex key
+      ansible.builtin.import_tasks: key.yml
+    - name: ensure plex repository
+      ansible.builtin.import_tasks: repository.yml
     - name: ensure plex package
       ansible.builtin.import_tasks: package.yml
   tags:

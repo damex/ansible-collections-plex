@@ -1,0 +1,9 @@
+---
+- name: ensure plex key
+  ansible.builtin.include_role:
+    name: damex.apt.apt_keys
+  vars:
+    apt_keys:
+      - id: "{{ plex_repository_key_id }}"
+        url: "{{ plex_repository_key_url }}"
+        state: "{{ plex_repository_key_state }}"

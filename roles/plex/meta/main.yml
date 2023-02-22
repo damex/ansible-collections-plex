@@ -12,5 +12,4 @@ galaxy_info:
       versions:
         - "buster"
 dependencies:
-  - role: "damex.package"
   - role: "damex.systemd_service"

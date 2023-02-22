@@ -18,5 +18,8 @@ plex_service_name: "plexmediaserver"
 plex_repository_key_id: "3ADCA79D"
 plex_repository_key_url: "https://downloads.plex.tv/plex-keys/PlexSign.key"
 plex_repository_key_state: "present"
-plex_repository: "deb https://downloads.plex.tv/repo/deb public main"
 plex_repository_name: "plexmediaserver"
+plex_repository_url: "https://downloads.plex.tv/repo/deb"
+plex_repository_distribution: public
+plex_repository_components:
+  - main

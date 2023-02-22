@@ -1,6 +1,5 @@
 ---
 galaxy_info:
-  role_name: plex
   author: Roman Kuzmitskii
   description: plex role
   license: GPLv2

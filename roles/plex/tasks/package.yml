@@ -24,14 +24,5 @@
   vars:
     apt_packages:
       - name: "{{ plex_package_name }}"
+        version: "{{ plex_package_version }}"
         state: "{{ plex_package_state }}"
-  when: not plex_package_version
-
-- name: ensure plex package with version
-  include_role:
-    name: damex.apt.apt_packages
-  vars:
-    apt_packages:
-      - name: "{{ plex_package_name }}-{{ plex_package_version }}"
-        state: "{{ plex_package_state }}"
-  when: plex_package_version | length

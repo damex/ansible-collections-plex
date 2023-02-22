@@ -1,5 +1,5 @@
 ---
-- name: ensure plex group
+- name: Ensure plex group
   ansible.builtin.group:
     name: "{{ plex_group }}"
     state: "{{ plex_group_state }}"

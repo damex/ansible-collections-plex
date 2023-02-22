@@ -1,5 +1,5 @@
 ---
-- name: ensure plex repository
+- name: Ensure plex repository
   ansible.builtin.include_role:
     name: damex.apt.apt_repositories
   vars:

@@ -1,5 +1,5 @@
 ---
-- name: ensure plex package
+- name: Ensure plex package
   ansible.builtin.include_role:
     name: damex.apt.apt_packages
   vars:

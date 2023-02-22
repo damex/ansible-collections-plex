@@ -1,5 +1,5 @@
 ---
-- name: ensure plex user
+- name: Ensure plex user
   ansible.builtin.user:
     name: "{{ plex_user }}"
     state: "{{ plex_user_state }}"

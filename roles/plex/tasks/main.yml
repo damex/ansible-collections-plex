@@ -1,15 +1,15 @@
 ---
-- name: ensure plex
+- name: Ensure plex
   block:
-    - name: ensure plex group
+    - name: Ensure plex group
       ansible.builtin.import_tasks: group.yml
-    - name: ensure plex user
+    - name: Ensure plex user
       ansible.builtin.import_tasks: user.yml
-    - name: ensure plex key
+    - name: Ensure plex key
       ansible.builtin.import_tasks: key.yml
-    - name: ensure plex repository
+    - name: Ensure plex repository
       ansible.builtin.import_tasks: repository.yml
-    - name: ensure plex package
+    - name: Ensure plex package
       ansible.builtin.import_tasks: package.yml
   tags:
     - plex

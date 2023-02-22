@@ -1,0 +1,13 @@
+---
+namespace: damex
+name: plex
+version: 0.1.0
+readme: README.md
+authors:
+  - Roman Kuzmitskii <ansible@damex.org>
+license_file: LICENSE
+tags:
+  - plex
+repository: https://github.com/damex/ansible-collections-plex
+dependencies:
+  damex.apt: "*"

@@ -5,7 +5,7 @@ version: 1.0.0
 readme: README.md
 authors:
   - Roman Kuzmitskii <ansible@damex.org>
-description: null
+description: plex collection
 license_file: LICENSE
 tags:
   - application

@@ -8,6 +8,8 @@ authors:
 description: null
 license_file: LICENSE
 tags:
+  - application
+  - linux
   - plex
 repository: https://github.com/damex/ansible-collections-plex
 dependencies:

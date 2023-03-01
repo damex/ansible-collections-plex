@@ -8,3 +8,4 @@
         url: "{{ plex_repository_url }}"
         distribution: "{{ plex_repository_distribution }}"
         components: "{{ plex_repository_components }}"
+        state: "{{ plex_repository_state }}"

@@ -20,3 +20,4 @@ plex_repository_url: https://downloads.plex.tv/repo/deb
 plex_repository_distribution: public
 plex_repository_components:
   - main
+plex_repository_state: present

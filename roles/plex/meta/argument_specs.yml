@@ -5,93 +5,72 @@ argument_specs:
       plex_package_name:
         type: str
         required: false
-        default: plexmediaserver
       plex_package_version:
         type: str
         required: false
       plex_package_state:
         type: str
         required: false
-        default: present
         choices:
           - absent
           - present
       plex_user:
         type: str
         required: false
-        default: plex
       plex_home:
         type: str
         required: false
-        default: /var/lib/plexmediaserver
       plex_shell:
         type: str
         required: false
-        default: /usr/sbin/nologin
       plex_user_state:
         type: str
         required: false
-        default: present
         choices:
           - absent
           - present
       plex_group:
         type: str
         required: false
-        default: plex
       plex_group_state:
         type: str
         required: false
-        default: present
         choices:
           - absent
           - present
       plex_user_extra_groups:
         type: list
         required: false
-        default:
-          - render
-          - video
       plex_service_name:
         type: str
         required: false
-        default: plexmediaserver
       plex_repository_key_id:
         type: str
         required: false
-        default: 3ADCA79D
       plex_repository_key_url:
         type: str
         required: false
-        default: https://downloads.plex.tv/plex-keys/PlexSign.key
       plex_repository_key_state:
         type: str
         required: false
-        default: present
         choices:
           - absent
           - present
       plex_repository_name:
         type: str
         required: false
-        default: plexmediaserver
       plex_repository_url:
         type: str
         required: false
-        default: https://downloads.plex.tv/repo/deb
       plex_repository_distribution:
         type: str
         required: false
-        default: public
       plex_repository_components:
         type: str
         required: false
-        default:
-          - main
       plex_repository_state:
         type: str
         required: false
-        default: present
         choices:
           - absent
           - present

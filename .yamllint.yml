@@ -2,6 +2,7 @@
 rules:
   braces:
     forbid: non-empty
+    max-spaces-inside: 1
   brackets:
     forbid: non-empty
   colons:
@@ -15,7 +16,7 @@ rules:
     ignore-shebangs: false
     min-spaces-from-content: 1
     require-starting-space: true
-  comments-indentation: enable
+  comments-indentation: false
   document-end:
     present: false
   document-start:

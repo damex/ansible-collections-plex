@@ -1,4 +1,16 @@
 ---
+- name: Ensure plex apt repository
+  ansible.builtin.include_role:
+    name: damex.apt.apt_repositories
+  vars:
+    apt_repositories: # noqa: var-naming[no-role-prefix]
+      - name: "{{ plex_apt_repository_name }}"
+        url: "{{ plex_apt_repository_url }}"
+        distribution: "{{ plex_apt_repository_distribution }}"
+        components: "{{ plex_apt_repository_components }}"
+        state: "{{ plex_apt_repository_state }}"
+  when: ansible_facts['pkg_mgr'] == "apt"
+
 - name: Ensure plex yum repository
   ansible.builtin.include_role:
     name: damex.yum.yum_repositories

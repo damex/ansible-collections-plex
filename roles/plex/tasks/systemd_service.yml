@@ -1,0 +1,6 @@
+---
+- name: Ensure plex systemd service {{ plex_service_name }}
+  ansible.builtin.import_role:
+    name: damex.systemd.systemd_service
+  vars:
+    systemd_service_name: "{{ plex_service_name }}"

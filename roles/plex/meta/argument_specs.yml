@@ -4,73 +4,54 @@ argument_specs:
     options:
       plex_package_name:
         type: str
-        required: false
       plex_package_version:
         type: str
-        required: false
       plex_package_state:
         type: str
-        required: false
         choices:
           - absent
           - present
       plex_user:
         type: str
-        required: false
       plex_home:
         type: str
-        required: false
       plex_shell:
         type: str
-        required: false
       plex_user_state:
         type: str
-        required: false
         choices:
           - absent
           - present
       plex_group:
         type: str
-        required: false
       plex_group_state:
         type: str
-        required: false
         choices:
           - absent
           - present
       plex_user_extra_groups:
         type: list
-        required: false
       plex_service_name:
         type: str
-        required: false
       plex_repository_key_id:
         type: str
-        required: false
       plex_repository_key_url:
         type: str
-        required: false
       plex_repository_key_state:
         type: str
-        required: false
         choices:
           - absent
           - present
       plex_repository_name:
         type: str
-        required: false
       plex_repository_url:
         type: str
-        required: false
       plex_repository_distribution:
         type: str
-        required: false
       plex_repository_components:
         type: str
-        required: false
       plex_repository_state:
         type: str
-        required: false
         choices:
           - absent
           - present

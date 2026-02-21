@@ -5,6 +5,7 @@
   vars:
     apt_repositories: # noqa: var-naming[no-role-prefix]
       - name: "{{ plex_apt_repository_name }}"
+        file: "{{ plex_apt_repository_file }}"
         url: "{{ plex_apt_repository_url }}"
         distribution: "{{ plex_apt_repository_distribution }}"
         components: "{{ plex_apt_repository_components }}"

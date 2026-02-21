@@ -45,6 +45,8 @@ argument_specs:
           - present
       plex_apt_repository_name:
         type: str
+      plex_apt_repository_file:
+        type: str
       plex_apt_repository_url:
         type: str
       plex_apt_repository_distribution:

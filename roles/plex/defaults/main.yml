@@ -15,6 +15,7 @@ plex_apt_key_id: 3ADCA79D
 plex_apt_key_url: https://downloads.plex.tv/plex-keys/PlexSign.key
 plex_apt_key_state: present
 plex_apt_repository_name: plexmediaserver
+plex_apt_repository_file: plex
 plex_apt_repository_url: https://downloads.plex.tv/repo/deb
 plex_apt_repository_distribution: public
 plex_apt_repository_components:

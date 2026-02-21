@@ -31,6 +31,7 @@ argument_specs:
           - present
       plex_user_extra_groups:
         type: list
+        elements: str
       plex_service_name:
         type: str
       plex_repository_key_id:

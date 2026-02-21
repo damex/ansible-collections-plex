@@ -14,5 +14,5 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install --user pipenv
-      - run: make pipenv
+      - run: pipenv install --deploy
       - run: pipenv run ansible-lint

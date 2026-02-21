@@ -14,3 +14,4 @@ tags:
 repository: https://github.com/damex/ansible-collections-plex
 dependencies:
   damex.apt: ">=1.4.6"
+  damex.yum: ">=1.3.4"

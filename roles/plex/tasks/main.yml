@@ -7,10 +7,12 @@
       ansible.builtin.import_tasks: group.yml
     - name: Ensure plex user
       ansible.builtin.import_tasks: user.yml
-    - name: Ensure plex key
-      ansible.builtin.import_tasks: key.yml
-    - name: Ensure plex repository
-      ansible.builtin.import_tasks: repository.yml
+    - name: Ensure plex apt key
+      ansible.builtin.import_tasks: apt_key.yml
+    - name: Ensure plex apt repository
+      ansible.builtin.import_tasks: apt_repository.yml
+    - name: Ensure plex yum repository
+      ansible.builtin.import_tasks: yum_repository.yml
     - name: Ensure plex package
       ansible.builtin.import_tasks: package.yml
     - name: Ensure plex systemd service

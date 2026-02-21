@@ -59,6 +59,8 @@ argument_specs:
           - present
       plex_yum_repository_name:
         type: str
+      plex_yum_repository_file:
+        type: str
       plex_yum_repository_baseurl:
         type: str
       plex_yum_repository_gpgkey:

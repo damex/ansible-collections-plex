@@ -20,7 +20,8 @@ plex_apt_repository_distribution: public
 plex_apt_repository_components:
   - main
 plex_apt_repository_state: present
-plex_yum_repository_name: plex
+plex_yum_repository_name: PlexRepo
+plex_yum_repository_file: plex
 plex_yum_repository_baseurl: https://downloads.plex.tv/repo/rpm/$basearch/
 plex_yum_repository_gpgkey: https://downloads.plex.tv/plex-keys/PlexSign.key
 plex_yum_repository_state: present

@@ -17,6 +17,7 @@
   vars:
     yum_repositories: # noqa: var-naming[no-role-prefix]
       - name: "{{ plex_yum_repository_name }}"
+        file: "{{ plex_yum_repository_file }}"
         baseurl: "{{ plex_yum_repository_baseurl }}"
         gpgkey: "{{ plex_yum_repository_gpgkey }}"
         gpgcheck: true

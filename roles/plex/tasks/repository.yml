@@ -1,6 +1,6 @@
 ---
 - name: Ensure plex repository
-  ansible.builtin.include_role:
+  ansible.builtin.import_role:
     name: damex.apt.apt_repositories
   vars:
     apt_repositories: # noqa: var-naming[no-role-prefix]

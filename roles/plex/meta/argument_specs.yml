@@ -34,25 +34,36 @@ argument_specs:
         elements: str
       plex_service_name:
         type: str
-      plex_repository_key_id:
+      plex_apt_key_id:
         type: str
-      plex_repository_key_url:
+      plex_apt_key_url:
         type: str
-      plex_repository_key_state:
+      plex_apt_key_state:
         type: str
         choices:
           - absent
           - present
-      plex_repository_name:
+      plex_apt_repository_name:
         type: str
-      plex_repository_url:
+      plex_apt_repository_url:
         type: str
-      plex_repository_distribution:
+      plex_apt_repository_distribution:
         type: str
-      plex_repository_components:
+      plex_apt_repository_components:
         type: list
         elements: str
-      plex_repository_state:
+      plex_apt_repository_state:
+        type: str
+        choices:
+          - absent
+          - present
+      plex_yum_repository_name:
+        type: str
+      plex_yum_repository_baseurl:
+        type: str
+      plex_yum_repository_gpgkey:
+        type: str
+      plex_yum_repository_state:
         type: str
         choices:
           - absent

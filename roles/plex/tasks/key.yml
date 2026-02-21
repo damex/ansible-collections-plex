@@ -1,9 +1,0 @@
----
-- name: Ensure plex key
-  ansible.builtin.import_role:
-    name: damex.apt.apt_keys
-  vars:
-    apt_keys: # noqa: var-naming[no-role-prefix]
-      - id: "{{ plex_repository_key_id }}"
-        url: "{{ plex_repository_key_url }}"
-        state: "{{ plex_repository_key_state }}"

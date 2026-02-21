@@ -1,0 +1,13 @@
+---
+- name: Ensure plex yum repository
+  ansible.builtin.include_role:
+    name: damex.yum.yum_repositories
+  vars:
+    yum_repositories: # noqa: var-naming[no-role-prefix]
+      - name: "{{ plex_yum_repository_name }}"
+        baseurl: "{{ plex_yum_repository_baseurl }}"
+        gpgkey: "{{ plex_yum_repository_gpgkey }}"
+        gpgcheck: true
+        enabled: true
+        state: "{{ plex_yum_repository_state }}"
+  when: ansible_facts['pkg_mgr'] == "yum" or ansible_facts['pkg_mgr'] == "dnf"

@@ -5,18 +5,18 @@ on: # yamllint disable-line rule:truthy
     paths:
       - galaxy.yml
     branches:
-      - main
+      - production
 
 jobs:
   ansible-galaxy:
     name: ansible-galaxy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.14"
       - run: pip install --user pipenv
       - run: pipenv install --deploy
-      - run: pipenv run ansible-galaxy collection build
-      - run: pipenv run ansible-galaxy collection publish --api-key ${{ secrets.GALAXY_API_KEY }} damex-plex-*.tar.gz
+      - run: pipenv run build-for-galaxy
+      - run: pipenv run publish-to-galaxy --api-key ${{ secrets.GALAXY_API_KEY }} damex-plex-*.tar.gz

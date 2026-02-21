@@ -3,6 +3,8 @@
   tags:
     - plex
   block:
+    - name: Ensure plex facts
+      ansible.builtin.import_tasks: facts.yml
     - name: Ensure plex group
       ansible.builtin.import_tasks: group.yml
     - name: Ensure plex user

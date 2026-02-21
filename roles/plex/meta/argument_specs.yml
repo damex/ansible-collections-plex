@@ -14,9 +14,9 @@ argument_specs:
       plex_user:
         type: str
       plex_home:
-        type: str
+        type: path
       plex_shell:
-        type: str
+        type: path
       plex_user_state:
         type: str
         choices:

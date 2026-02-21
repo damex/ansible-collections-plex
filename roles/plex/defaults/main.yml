@@ -11,18 +11,18 @@ plex_user_extra_groups:
   - render
   - video
 plex_service_name: plexmediaserver
-plex_apt_key_id: 3ADCA79D
-plex_apt_key_url: https://downloads.plex.tv/plex-keys/PlexSign.key
+plex_apt_key_id: 0B9CFFDE
+plex_apt_key_url: https://downloads.plex.tv/plex-keys/PlexSign.v2.key
 plex_apt_key_state: present
 plex_apt_repository_name: plexmediaserver
 plex_apt_repository_file: plex
-plex_apt_repository_url: https://downloads.plex.tv/repo/deb
+plex_apt_repository_url: https://repo.plex.tv/deb/
 plex_apt_repository_distribution: public
 plex_apt_repository_components:
   - main
 plex_apt_repository_state: present
 plex_yum_repository_name: PlexRepo
 plex_yum_repository_file: plex
-plex_yum_repository_baseurl: https://downloads.plex.tv/repo/rpm/$basearch/
-plex_yum_repository_gpgkey: https://downloads.plex.tv/plex-keys/PlexSign.key
+plex_yum_repository_baseurl: https://repo.plex.tv/rpm/
+plex_yum_repository_gpgkey: https://downloads.plex.tv/plex-keys/PlexSign.v2.key
 plex_yum_repository_state: present

@@ -50,7 +50,8 @@ argument_specs:
       plex_repository_distribution:
         type: str
       plex_repository_components:
-        type: str
+        type: list
+        elements: str
       plex_repository_state:
         type: str
         choices:
